@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONGO_URI) //Add your database credentials here!
     .then(() => console.log('Connected to DB!'))
     .catch(error => console.log(error.message));
 
